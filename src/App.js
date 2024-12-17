@@ -105,18 +105,21 @@ export function App(){
   color:white;
   }
   `
-  const Clube=styled.div`background-color:;
-  height:100px;min-width:120px;
+  const Clube=styled.div`background-color:#31930d;
+  height:130px;min-width:120px;
      display:flex;
   align-items:center;
   justify-content:space-evenly;;
   img{width:60px;height:auto;}
    flex-direction:column;
+    margin-right:10px;box-sizing:border-box;
+    border-radius:10px;
    h3{
    margin:0;
   font-size:16px;
+  height:30px;
   color:white;
-  font-weight:400;white-space: nowrap;
+  font-weight:400;text-align: center;
    }
   `
   const Menu=styled.div`
@@ -142,7 +145,7 @@ export function App(){
   
   `
   const Lista=styled.div`background-color:;
-    height:130px;width:100%;
+    height:170px;width:100%;
     display:flex;
   align-items:center;
   overflow:auto;
