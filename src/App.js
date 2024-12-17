@@ -107,6 +107,7 @@ export function App(){
   `
   const Clube=styled.div`background-color:#31930d;
   height:130px;min-width:120px;
+  cursor:pointer;
      display:flex;
   align-items:center;
   justify-content:space-evenly;;
@@ -130,7 +131,7 @@ export function App(){
   justify-content:center;
   h1{
   font-size:25px;
-  color:green;
+  color:#1D5B06;
   }
   `
   const Resto=styled.div`
