@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Clube from "./Clube"
 
-export default function Continente({nome,clubes,participaram}){
+export default function Continente({cores,iCont,setTime,nome,clubes,participaram}){
     return(
         <Tudo>
             <Topo>
@@ -9,8 +9,8 @@ export default function Continente({nome,clubes,participaram}){
                 <h2><small>já participaram:</small> {participaram}</h2>
             </Topo>
             <ListaClubes>
-            {clubes.map( clube=>
-                <Clube nome={clube} />
+            {clubes.map( (clube,i)=>
+                <Clube  nome={clube} cores={cores[i]} escolher={()=>setTime(iCont*100+i)} />
             )}
             </ListaClubes>
         </Tudo>
@@ -19,6 +19,7 @@ export default function Continente({nome,clubes,participaram}){
 const Tudo=styled.div`
     flex-direction:column;
     width:95%;
+    max-width:600px;
     background-color:#257709;
     border-radius:20px;
     box-sizing:border-box;

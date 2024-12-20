@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import Escudo from "./Escudo"
 
-export default function Clube({nome}){
+export default function Clube({cores,nome,escolher}){
     return(
-        <Tudo>
-            <Escudo/>
+        <Tudo onClick={escolher}>
+            <Escudo cores={cores}/>
             <h3>{nome}</h3>
         </Tudo>
     )
