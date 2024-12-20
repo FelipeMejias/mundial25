@@ -14,7 +14,7 @@ export function App(){
             <TelaTime time={time} setTime={setTime}/>
             <Conteudo>
                 {continentes.map( (item,i)=> 
-                    <Continente cores={item.cores} iCont={i} setTime={setTime} participaram={item.participaram} nome={item.nome} clubes={item.clubes} />
+                    <Continente imgs={item.imagens} iCont={i} setTime={setTime} participaram={item.participaram} nome={item.nome} clubes={item.clubes} />
                 )}
             </Conteudo>
         </Tela>

@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import Escudo from "./Escudo"
 
-export default function Clube({cores,nome,escolher}){
+export default function Clube({img,cores,nome,escolher}){
     return(
         <Tudo onClick={escolher}>
-            <Escudo cores={cores}/>
+            <img src={img}/>
             <h3>{nome}</h3>
         </Tudo>
     )
@@ -28,4 +28,5 @@ const Tudo=styled.div`
         font-weight:400;
         text-align: center;
     }
+        img{height:40%}
 `

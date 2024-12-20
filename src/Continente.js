@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Clube from "./Clube"
 
-export default function Continente({cores,iCont,setTime,nome,clubes,participaram}){
+export default function Continente({imgs,cores,iCont,setTime,nome,clubes,participaram}){
     return(
         <Tudo>
             <Topo>
@@ -10,7 +10,7 @@ export default function Continente({cores,iCont,setTime,nome,clubes,participaram
             </Topo>
             <ListaClubes>
             {clubes.map( (clube,i)=>
-                <Clube  nome={clube} cores={cores[i]} escolher={()=>setTime(iCont*100+i)} />
+                <Clube  nome={clube} img={imgs[i]} escolher={()=>setTime(iCont*100+i)} />
             )}
             </ListaClubes>
         </Tudo>

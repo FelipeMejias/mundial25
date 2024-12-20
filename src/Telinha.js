@@ -11,7 +11,7 @@ export default function TelaTime({time,setTime}){
             <Sair onClick={()=>setTime(-1)}>Fechar</Sair>
                 
                 <span>
-                    <Escudo cores={continentes[cont].cores[clube]}/>
+                    <img src={continentes[cont].imagens[clube]}/>
                     <h4>{continentes[cont].clubes[clube]}</h4>
                 </span>
                 <h4><small>{continentes[cont].paises[clube]}</small></h4>
@@ -40,6 +40,7 @@ justify-content:space-evenly;
     align-items:center;display:flex;flex-direction:column;
     justify-content:space-between;
     }
+      img{height:70%}
 `
 const Sair=styled.div`
 position:absolute;top:10px;right:10px;
