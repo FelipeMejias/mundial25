@@ -26,7 +26,7 @@ justify-content:space-evenly;
     align-items:center;
     height:50%;
     width:70%;
-    background-color:white;
+    background-color:#d6d6d6;
     h4{
         font-size:22px;
         font-weight:500;
